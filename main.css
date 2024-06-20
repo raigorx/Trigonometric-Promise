@@ -1,0 +1,73 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 25px;
+  color: #fff;
+}
+
+input {
+  font-size: inherit;
+  padding: 8px;
+  border-radius: 5px;
+  color: inherit;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.argument span {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.carmine {
+  color: #960018;
+}
+
+.refresh-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 10px;
+}
+
+.refresh-icon {
+  fill: white;
+  transition: transform 0.5s ease-in-out;
+}
+
+.row-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.refresh-icon.cooldown {
+  cursor: not-allowed;
+}
